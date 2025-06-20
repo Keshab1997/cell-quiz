@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কোষ জীববিজ্ঞান কুইজ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="welcome-animation">কোষ জীববিজ্ঞান কুইজ</h1>
+        <div class="quiz-header">
+            <div>প্রশ্ন: <span id="question-count">1/10</span></div>
+            <div id="timer">সময়: 10:00</div>
+            <button id="theme-toggle">ডার্ক মোড</button>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div id="quiz"></div>
+        <button id="submit-btn">জমা দিন</button>
+        <button id="restart-btn" style="display: none;">আবার শুরু করুন</button>
+        <div id="result"></div>
+    </div>
+    <audio id="correct-audio" src="correct.mp3"></audio>
+    <audio id="wrong-audio" src="wrong.mp3"></audio>
+    <audio id="start-audio" src="start.mp3"></audio>
+    <audio id="end-audio" src="end.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
